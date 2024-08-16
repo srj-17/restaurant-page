@@ -1,3 +1,113 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Nunito Sans", sans-serif;;
+}
+
+:root {
+    --font-header: "Sedan", serif; 
+    --std-padding: 20px;
+    --bgcolor: aquamarine;
+    --primary: lightgreen;
+}
+
 body {
-    background-color: aquamarine;
+    background-color: var(--bgcolor);
+    display: grid;
+}
+
+header {
+    display: grid;
+    justify-content: center;
+}
+
+header .header-btn {
+    border: 0;
+    background-color: var(--primary);
+    padding: 4px 30px;
+}
+
+#content {
+    display: grid;
+    grid-auto-flow: column;
+    /* grid-template-columns: 3fr auto 2fr; */
+}
+
+.content-left {
+    display: grid;
+    padding: var(--std-padding);
+}
+
+.content-left {
+    gap: 5px;
+}
+
+.middle-line {
+    width: 8px;
+    background-color: rgba(0, 0, 0, 0.63);
+    margin: 50px 0;
+    border-radius: 20px;
+}
+
+.content-right {
+    display: flex;
+    flex-direction: column;
+    padding: var(--std-padding);
+    padding-top: 50px;
+    gap: 20px;
+}
+
+.restaurant-name {
+    font-size: 6rem;
+    font-family: var(--font-header);
+}
+
+.guests-title {
+    font-size: 2rem;
+}
+
+.guests .description {
+    font-size: 1.1rem;
+}
+
+.restro-pic {
+    width: 100%;
+    margin: 12px 0;
+    box-shadow: 2px 2px 4px black;
+}
+
+.service-header,
+.extra-header {
+    font-family: var(--font-header);
+    font-weight: bold;
+}
+
+.service-header {
+    font-size: 2rem;
+}
+
+.service-description {
+    font-size: 1.2rem;
+}
+
+.service-list {
+    list-style-type: none;
+    display: grid; 
+    padding: 5px 0 0 0;
+    font-size: 1.1rem;
+}
+
+.service-list li::before {
+    content: '>';
+    padding-right: 10px;
+    font-weight: bold;
+}
+
+.extra-header {
+    font-size: 2rem;
+}
+
+.extra-content {
+    font-size: 1.1rem;
 }

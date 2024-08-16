@@ -4,18 +4,63 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Restaurant Page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sedan:ital@0;1&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Sedan:ital@0;1&display=swap" rel="stylesheet">
     <!-- no need to add the script tag, will be added by the webpack, and link too -->
 </head>
 <body>
     <header>
         <nav>
-            <button class="home">Home</button>
-            <button class="menu">Menu</button>
-            <button class="about">About</button>
+            <button class="home header-btn">Home</button>
+            <button class="menu header-btn">Menu</button>
+            <button class="about header-btn">About</button>
         </nav>
     </header>
     <div id="content">
-        
+        <div class="content-left">
+            <div class="restaurant-name-container">
+                <div class="restaurant-name">My Restro</div>
+            </div>
+            <div class="guests">
+                <div class="guests-title">
+                    Welcome to our exclusive club of famous guests
+                </div>
+                <img class="restro-pic" src="restro-pic.jpg" alt="Photo of the restaurant" class="restro-photo" width="200px" height="auto">
+                <div class="description">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur quae dignissimos officia aliquam! Sit, temporibus illum. Error voluptatibus deserunt dolorem!
+                </div>
+            </div>
+        </div>
+        <div class="middle-line"></div>
+        <div class="content-right">
+            <div class="services">
+                <div class="service-header">
+                    Our Services
+                </div>
+                <div class="service-description">
+                    We provide mouth-watering (pun-intended) services, so come at your own risk.
+                </div>
+                <ul class="service-list">
+                    <li class="list-item">Sleeping Services</li>
+                    <li class="list-item">Sauna</li>
+                    <li class="list-item">Bathing</li>
+                    <li class="list-item">Eating</li>
+                    <li class="list-item">Swmming-pool</li>
+                    <li class="list-item">Bar</li>
+                    <li class="list-item">Lounge</li>
+                    <li class="list-item">Pirate Area</li>
+                </ul>
+            </div>
+            <div class="extra">
+                <div class="extra-header">Extra</div>
+                <div class="extra-content">
+                    We all love extra content, don't we? But I don't have much to offer right now in terms 
+                    of how much guff I can give you. Thus, here's a lorem text: Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum provident atque accusantium debitis expedita reprehenderit optio temporibus aliquam, officiis suscipit perspiciatis consequatur vero repellendus amet aut laboriosam quaerat eveniet error corrupti. Quas enim nemo eum! Pariatur doloribus in non quibusdam quaerat sit, iure et libero. Ex aperiam quod voluptas impedit.
+                </div>
+            </div>
+        </div>
     </div>
 </body>
 </html>
