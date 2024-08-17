@@ -3,13 +3,15 @@
     padding: 0;
     box-sizing: border-box;
     font-family: "Nunito Sans", sans-serif;;
+    color: var(--text);
 }
 
 :root {
     --font-header: "Sedan", serif; 
     --std-padding: 20px;
-    --bgcolor: aquamarine;
-    --primary: lightgreen;
+    --bgcolor: #FF9F1C;
+    --primary: #2cb8aa;
+    --text: #2A2B2A;
 }
 
 body {
@@ -20,12 +22,22 @@ body {
 header {
     display: grid;
     justify-content: center;
+    padding: var(--std-padding) var(--std-padding) 0 var(--std-padding);
 }
 
 header .header-btn {
     border: 0;
     background-color: var(--primary);
-    padding: 4px 30px;
+    padding: 8px 60px;
+    color: var(--text);
+    font-weight: bold;
+    font-size: 1rem;
+    border-radius: 10px;
+    box-shadow: inset 4px -4px #20857c;
+}
+
+header .header-btn:active {
+    box-shadow: none;
 }
 
 #content {
@@ -36,7 +48,7 @@ header .header-btn {
 
 .content-left {
     display: grid;
-    padding: var(--std-padding);
+    padding: 0 var(--std-padding) var(--std-padding) var(--std-padding);
 }
 
 .content-left {
@@ -45,8 +57,8 @@ header .header-btn {
 
 .middle-line {
     width: 8px;
-    background-color: rgba(0, 0, 0, 0.63);
-    margin: 50px 0;
+    background-color: #E71D36;
+    margin: 30px 0;
     border-radius: 20px;
 }
 
@@ -54,13 +66,28 @@ header .header-btn {
     display: flex;
     flex-direction: column;
     padding: var(--std-padding);
-    padding-top: 50px;
+    padding-top: var(--std-padding);
     gap: 20px;
 }
 
 .restaurant-name {
     font-size: 6rem;
     font-family: var(--font-header);
+    text-shadow: 3px 3px 2px #C3BABA;
+}
+
+.guests {
+    display: grid;
+    gap: 10px;
+}
+
+.guests .restro-pic {
+    padding: 0 20px 0 0;
+}
+
+.guests img {
+    width: 100%;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.623);
 }
 
 .guests-title {
@@ -69,12 +96,6 @@ header .header-btn {
 
 .guests .description {
     font-size: 1.1rem;
-}
-
-.restro-pic {
-    width: 100%;
-    margin: 12px 0;
-    box-shadow: 2px 2px 4px black;
 }
 
 .service-header,
