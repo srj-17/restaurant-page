@@ -1,4 +1,4 @@
-import resImg from "./restro-pic.jpg";
+import resImg from "./assets/img/restro-pic.jpg";
 let content = document.querySelector('#content');
 
 // create top level nodes (meaning nodes which can be appended directly on demand) and append all the nodes to them
