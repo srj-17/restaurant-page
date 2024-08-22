@@ -20,7 +20,7 @@ aboutButton.addEventListener('click', () => {
     showAbout();
 });
 
-// document.addEventListener('DOMContentLoaded', () => {
-//     let e = new Event('click');
-//     homeButton.dispatchEvent(e);
-// })
+document.addEventListener('DOMContentLoaded', () => {
+    let e = new Event('click');
+    homeButton.dispatchEvent(e);
+})
