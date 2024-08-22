@@ -112,14 +112,16 @@ img {
     font-size: 1.2rem;
 }
 
-.service-list {
+.service-list,
+.menu-list {
     list-style-type: none;
     display: grid; 
     padding: 5px 0 0 0;
     font-size: 1.1rem;
 }
 
-.service-list li::before {
+.service-list li::before,
+.menu-list li::before {
     content: '>';
     padding-right: 10px;
     font-weight: bold;

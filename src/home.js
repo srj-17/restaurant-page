@@ -107,6 +107,10 @@ contentRight.appendChild(extra);
 
 // function to append these things to the document (content, specifically)
 function showHome() {
+    // first clear the content (replace it with empty child)
+    content.replaceChildren();
+
+    // then append the elements
     content.appendChild(contentLeft);
     content.appendChild(middleLine);
     content.appendChild(contentRight);

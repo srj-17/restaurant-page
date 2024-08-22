@@ -13,6 +13,7 @@ homeButton.addEventListener('click', () => {
 
 menuButton.addEventListener('click', () => {
     showMenu();
+    console.log('menu-clicked')
 });
 
 aboutButton.addEventListener('click', () => {
