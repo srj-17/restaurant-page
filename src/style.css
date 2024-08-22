@@ -85,7 +85,7 @@ header .header-btn:active {
     padding: 0 20px 0 0;
 }
 
-.guests img {
+img {
     width: 100%;
     box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.623);
 }
@@ -131,4 +131,20 @@ header .header-btn:active {
 
 .extra-content {
     font-size: 1.1rem;
+}
+
+.menu-header {
+    font-size: 3rem;
+    font-weight: bold;
+    font-family: var(--font-header);
+}
+
+.menu-description {
+    font-size: 1.2rem;
+}
+
+.menu-items-header {
+    font-size: 2rem;
+    font-weight: bold;
+    font-family: var(--font-header);
 }
