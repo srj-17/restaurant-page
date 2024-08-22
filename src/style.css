@@ -150,3 +150,20 @@ img {
     font-weight: bold;
     font-family: var(--font-header);
 }
+
+.about-header {
+    font-size: 3rem;
+    font-weight: bold;
+    font-family: var(--font-header);
+}
+
+/*
+** because about content is placed in the center, it doesn't have content-right, but has about-content-container instead
+** that uses grid instead of flex
+**/
+.about-content-container {
+    font-size: 1.5rem;
+    display: grid;
+    place-content: center;
+    padding: var(--std-padding);
+}
